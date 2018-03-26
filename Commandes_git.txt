@@ -1,0 +1,7 @@
+
+
+# Créer nouvelle branche :
+git branch ma_branche
+
+# Se positionner dessus :
+git checkout ma_branche
