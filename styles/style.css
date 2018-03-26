@@ -1,0 +1,142 @@
+/*
+    GENERAL
+*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#sidebar 
+{
+    float: left;
+    margin-left: -15px;
+    width: 200px;
+    height: 100%;
+    border-radius: 15px;
+    background-image: url("../img/bandeau.png");
+    background-repeat: repeat-y;
+}
+
+#site 
+{    
+    margin-left: 200px;
+    height: 100%;
+}
+
+/*
+    PARTIE HEADER
+*/
+#site header
+{
+    width: 100%;
+    display: inline-flex;
+}
+
+#citations
+{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+#citations h1
+{
+    display: block;
+    font-family: 'alex_brushregular', Arial, serif;
+    font-size: 60px;
+}
+#citations cite
+{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+figure
+{
+    border: 1px solid black;
+	background-image:url("../img/border.jpg");
+	border-radius:8px;
+    padding: 10px;
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+}
+figcaption
+{
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+/*
+    PARTIE CONTAINER
+*/
+#container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section
+{
+    width: 30%;
+    margin: 1%;
+}
+
+li
+{
+    margin-bottom: 15px;
+}
+
+h2
+{
+    color: saddlebrown;
+    font-family: 'introrustg-base2line', Arial, serif;
+}
+
+ul, ol, p
+{
+    font-size: 20px;
+}
+
+
+/*
+    PARTIE FOOTER
+*/
+footer
+{
+    text-align: center;
+}
+
+
+/*
+    PARTIE @MEDIA (Petits écrans)
+*/
+@media screen and (max-width: 1024px)
+{
+
+    #sidebar 
+    {
+        display: none;
+    }
+    
+    #site 
+    {    
+        margin: 10px;
+        height: 100%;
+    }
+    
+    #container
+    {
+        display: inline;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    
+    section
+    {
+        width: 100%;
+    }
+}

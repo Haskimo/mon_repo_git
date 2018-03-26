@@ -1,0 +1,83 @@
+body
+{
+    background: url("../img/bg.png");
+    color: white;
+}
+
+h1
+{
+    display: block;
+    font-family: 'alex_brushregular', Arial, serif;
+    border: 2px solid white;
+    font-size: 60px;
+    width: 80%;
+    padding-top: 10px; /* je mets un padding-top parce que la font custom est mal centrée avec les bordures */
+    text-align: center;
+}
+
+#citation
+{
+    text-align: center;
+    text-shadow: 2px 2px 4px grey;
+}
+
+
+figure
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid white;
+	background-image:url("../img/border.jpg");
+	border-radius:8px;
+    padding: 10px;
+}
+figcaption
+{
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: aqua;
+}
+
+#container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.element
+{
+    width: 25%;
+    margin: auto;
+}
+
+
+/*
+    BONUS
+*/
+
+#chat
+{
+    border-radius: 50%;
+    margin-top: 5000px;
+    animation-duration: 400ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes blink 
+{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
