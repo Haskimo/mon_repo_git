@@ -5,3 +5,15 @@ git branch ma_branche
 
 # Se positionner dessus :
 git checkout ma_branche
+
+# Travailler dessus comme sur la branche master mais sur a branche "ma_branche" :
+# Add + Commit -m + Push :
+git add mon_fichier
+git commit -m "Nouvelle branche, fichier machin"
+git push origin ma_branche
+
+# Merge ma_branche vers master :
+=> On se replace sur master :
+git checkout master
+=> On merge ma_branche
+git merge ma_branche
