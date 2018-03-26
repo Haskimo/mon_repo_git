@@ -23,3 +23,12 @@ git merge ma_branche
 git blame index.html
 => Comprendre pourquoi : git log => Chercher en fonction du SHA "29b64f2c"
 => Voir les changements : git show 29b64f2c
+
+
+# Pour mettre de coté une branche :
+git stash
+=> Changer de branche : git checkout autre_branche
+=> Travailler : add + commit + push
+=> Revenir sur la branche en stash : git checkout ma_branche
+git stash pop
+(Attention ça vide le stash : "git stash apply" pour ne pas vider le stash)
