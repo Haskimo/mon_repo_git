@@ -17,3 +17,9 @@ git push origin ma_branche
 git checkout master
 => On merge ma_branche
 git merge ma_branche
+
+
+# Blamer un coupable de changement de fichier :
+git blame index.html
+=> Comprendre pourquoi : git log => Chercher en fonction du SHA "29b64f2c"
+=> Voir les changements : git show 29b64f2c
